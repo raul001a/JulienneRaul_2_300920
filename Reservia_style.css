@@ -1,0 +1,172 @@
+﻿
+/*mise en page générale*/
+
+/*mise en place de la police*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('polices/Raleway-VariableFont_wght.ttf');
+}
+body {
+    font-family: Raleway, Arial;
+}
+
+#bloc_page {
+    width:1440px;
+}
+
+/*mise en page du header*/
+
+header {
+    height:130px;
+    border:solid 1px black;
+    display:flex;
+}
+
+.ancre {
+    border: solid 1px red;
+    margin-top: auto;
+    margin-bottom: auto;
+    width:138px;
+}
+
+.ancre p {
+        border: dotted 1px blue;
+        margin:auto;
+        text-align:center;
+    }
+
+/*pourquoi taille image ne fonctionne pas*/
+#logo_reservia {
+    width: 94px;
+    height: auto;   
+}
+
+#bloc_logo {
+    border: solid 1px red;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header a {
+    text-decoration:none;
+    color:black;
+    
+}
+
+.ancre:hover {
+    border-top: 2px solid #0065FC;
+    
+}
+
+header a:hover {
+    color: #0065FC;
+}
+
+#sinscrire {
+    color: #0065FC;
+    font-weight: bold;
+    border: solid 1px red;
+    margin-top: auto;
+    margin-bottom: auto;
+    width:138px;
+    text-align:center;
+}
+
+/*fin mise en place header*/
+
+/*mise en place recherche par lieu*/
+#button {
+    background-color: #0065FC;
+    color: white;
+}
+
+#where{
+    font-weight:bold;
+    color:black;
+}
+
+search_button {
+    display:flex;
+}
+/*fin mise en place recherche par lieu*/
+
+/*mise en place des icones*/
+.icon {
+    color: #0065FC;
+    font-size: 1.4em;
+    background-color: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/*mise en place des filtres*/
+.filtres {
+    display: flex;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 50px;
+    height: 50px;
+    max-width: 240px;
+}
+
+
+/*taille des images à revoir*/
+.images_hebergements {
+    width: 230px;
+    height: 114px;
+}
+
+.images_populaires {
+    width:127px;
+    height:133px;
+}
+
+.images_activites {
+    width: 127px;
+    height: 133px;
+}
+
+/*taille des polices_ à revoi*/
+h1 {
+    font-size : 1.5em ;
+    font-weight: bold;
+    
+}
+
+h2{
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+h3{
+    font-size:1em;
+    font-weight:normal; 
+}
+
+
+/*mise en page du footer*/
+
+footer {
+    background-color: #F2F2F2;
+    display:flex;
+    height:220px;
+}
+
+#a_propos {
+    border: solid 1px black;
+}
+
+#nos_hebergements {
+    border: solid 1px black;
+}
+
+#assistance {
+    border: solid 1px black;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
