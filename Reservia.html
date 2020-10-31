@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Reservia_style.css">
         <script src="https://kit.fontawesome.com/18b7f90565.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
@@ -15,50 +16,52 @@
                 <div class="ancre"> <p><a href="#section1"> Hébergements</a></p></div>
                 <div class="ancre"> <p><a href="#activites"> Activités</a></p></div>
                 <div id="sinscrire"><a href="https://openclassrooms.com" title="Vous ne le regretterez pas !" target="_blank"> S'inscrire</a></div>
-            
+
             </header>
+
+            
 
             <div id="bloc_titre">
                 <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p> En plein centre ville ou en pleine nature</p>
             </div>
             <div id="bloc_button">
-                
-                    <form method="post" action="traitement.php" id="search_button">
-                   
-                            <div id="essai-label"><p class="fas fa-map-marker-alt"></p></div>
-                            <div><input type="text" name="where" id="where" placeholder="Marseille, France" /></div>
-                            <div><input type="submit" value="Rechercher" id="button" /></div>
-                   
-                    </form>   
-             </div>
 
-             <div id="bloc_filtres">
-                    <h2> Filtres</h2>
-                    <div class="filtres">
-                        <div class="icon"> <img src="images/Icones/money-bill-wave-alt-solid.svg" alt="photo billet de banque" /> </div>
-                        <!--<div class="icon"><p><i class="fas fa-money-bill-wave-alt"></i></p></div> -->
-                        <div class="texte_filtre"><div><p> Economique</p></div></div>
+                <form method="post" action="traitement.php" id="search_button">
+                    <div id="label">
+                        <div id="label_2"><i class="fas fa-map-marker-alt"></i></div>
+                        <input type="text" name="where" id="where" placeholder="Marseille, France" />
                     </div>
-                    <div class="filtres">
-                        <div class="icon"><p><i class="fas fa-baby"></i></p></div>
-                        <div class="texte_filtre"><p> Familial</p></div>
-                    </div>
-                    <div class="filtres">
-                        <div class="icon"><p><i class="fas fa-heart"></i></p></div>
-                        <div class="texte_filtre"><p> Romantique</p></div>
-                    </div>
-                    <div class="filtres">
-                        <div class="icon"><p><i class="fas fa-dog"></i></p></div>
-                        <div class="texte_filtre"><p> Animaux autorisés</p></div>
-                    </div>
-             </div>
+                   <input type="submit" value="Rechercher" id="button" />
 
-             <div id="attention">
-                 <div id="icon_attention"><p><i class="fas fa-info"></i></p></div>
-                 <div id="texte_attention"><p> Plus de 500 logements sont disponibles dans cette ville</p></div>
-             </div>
-        
+                </form>
+            </div>
+
+            <div id="bloc_filtres">
+                <h2> Filtres</h2>
+                <div class="filtres">
+                   <div class="icon"><i class="fas fa-money-bill-wave-alt"></i></div>
+                    <div class="texte_filtre"><div><p> Economique</p></div></div>
+                </div>
+                <div class="filtres">
+                    <div class="icon"><i class="fas fa-baby"></i></div>
+                    <div class="texte_filtre"><p> Familial</p></div>
+                </div>
+                <div class="filtres">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <div class="texte_filtre"><p> Romantique</p></div>
+                </div>
+                <div class="filtres">
+                    <div class="icon"><i class="fas fa-dog"></i></div>
+                    <div class="texte_filtre"><p> Animaux autorisés</p></div>
+                </div>
+            </div>
+
+            <div id="attention">
+                <div id="icon_attention"><i class="fas fa-info"></i></div>
+                <div id="texte_attention"><p> Plus de 500 logements sont disponibles dans cette ville</p></div>
+            </div>
+
 
             <section id="section1">
                 <div id="hebergements">
@@ -66,8 +69,8 @@
                         <h1> Hébergements à Marseille</h1>
                     </div>
                     <div id="bloc_hebergements">
-                       
-                       <div class="vignette_hebergement">
+
+                        <a class="vignette_hebergement" href="https://openclassrooms.com" target="_blank">
                             <img class="images_hebergements" src="images/hebergements/auberge_la_cannebiere.jpg" alt="photo de l'auberge la cannebière" />
                             <div class="description_hebergements">
                                 <p class="nom_hotel"> Auberge la Cannebière</p>
@@ -80,9 +83,8 @@
                                     <div class="grey-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>  
-
-                        <div class="vignette_hebergement">
+                        </a>
+                        <a class="vignette_hebergement" href="https://openclassrooms.com" target="_blank">
                             <img class="images_hebergements" src="images/hebergements/hotel_du_port.jpg" alt="photo de l'hôtel du port" />
                             <div class="description_hebergements">
                                 <p class="nom_hotel">Hôtel du port</p>
@@ -95,8 +97,8 @@
                                     <div class="blue-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vignette_hebergement">
+                        </a>
+                        <a class="vignette_hebergement" href="https://openclassrooms.com" target="_blank">
                             <img class="images_hebergements" src="images/hebergements/hotel_les_mouettes.jpg" alt="photo de l'hôtel les mouettes" />
                             <div class="description_hebergements">
                                 <p class="nom_hotel">Hôtel Les mouettes</p>
@@ -109,8 +111,8 @@
                                     <div class="grey-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vignette_hebergement">
+                        </a>
+                        <a class="vignette_hebergement" href="https://openclassrooms.com" target="_blank">
                             <img class="images_hebergements" src="images/hebergements/hotel_de_la_mer.jpg" alt="photo de l'hôtel de la mer" />
                             <div class="description_hebergements">
                                 <p class="nom_hotel">Hôtel de la mer</p>
@@ -123,8 +125,8 @@
                                     <div class="grey-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vignette_hebergement">
+                        </a>
+                        <a class="vignette_hebergement" href="https://openclassrooms.com" target="_blank">
                             <img class="images_hebergements" src="images/hebergements/auberge_le_panier.jpg" alt="photo de l'auberge le panier" />
                             <div class="description_hebergements">
                                 <p class="nom_hotel">Auberge le Panier</p>
@@ -137,8 +139,8 @@
                                     <div class="grey-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vignette_hebergement">
+                        </a>
+                        <a class="vignette_hebergement" href="https://openclassrooms.com" target="_blank">
                             <img class="images_hebergements" src="images/hebergements/hotel_chez_amina.jpg" alt="photo de l'hôtel chez Amina" />
                             <div class="description_hebergements">
                                 <p class="nom_hotel">Hôtel chez Amina</p>
@@ -151,7 +153,7 @@
                                     <div class="blue-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div id="plus">
                         <p>Afficher plus</p>
@@ -164,7 +166,7 @@
                         <span><i class="fas fa-chart-line"></i></span>
                     </div>
                     <div id="bloc_populaire">
-                        <div class="vignette_populaire">
+                        <a class="vignette_populaire" href="https://openclassrooms.com" target="_blank">
                             <img class="images_populaires" src="images/hebergements/hotel_le_soleil_du_matin.jpg" alt="photo de l'hôtel le soleil du matin" />
                             <div class="description_populaires">
                                 <div>
@@ -179,8 +181,8 @@
                                     <div class="blue-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vignette_populaire">
+                        </a>
+                        <a class="vignette_populaire" href="https://openclassrooms.com" target="_blank">
                             <img class="images_populaires" src="images/hebergements/au_coeur_de_leau.jpg" alt="photo des chambres d'hôtes au coeur de l'eau" />
                             <div class="description_populaires">
                                 <div>
@@ -195,8 +197,8 @@
                                     <div class="grey-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vignette_populaire">
+                        </a>
+                        <a class="vignette_populaire" href="https://openclassrooms.com" target="_blank">
                             <img class="images_populaires" src="images/hebergements/hotel_tout_bleu_et_blanc.jpg" alt="photo de l'hôtel tout bleu et blanc" />
                             <div class="description_populaires">
                                 <div>
@@ -211,7 +213,7 @@
                                     <div class="grey-star"><i class="fas fa-star"></i></div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                 </div>
@@ -222,36 +224,36 @@
                 <h1> Activités à Marseille</h1>
                 <div id="bloc_activite">
                     <div id="column1">
-                        <div id="vignette_activite_1">
+                        <a id="vignette_activite_1" href="https://openclassrooms.com" target="_blank">
                             <img class="images_activites" src="images/activites/vieux_port.jpg" alt="photo du vieux port de Marseille" />
                             <div class="description_activite"><p> Vieux Port</p></div>
-                        </div>
+                        </a>
                     </div>
                     <div id="column2">
-                        <div id="vignette_activite_2">
+                        <a id="vignette_activite_2" href="https://openclassrooms.com" target="_blank">
                             <img class="images_activites" src="images/activites/fort_de_pomegues.jpg" alt="photo du fort de pomègues" />
                             <div class="description_activite"><p> Fort de Pomègues </p></div>
-                        </div>
-                        <div id="vignette_activite_3">
+                        </a>
+                        <a id="vignette_activite_3" href="https://openclassrooms.com" target="_blank">
                             <img class="images_activites" src="images/activites/iles_du_frioul.jpg" alt="photo des îles du Frioul" />
                             <div class="description_activite"><p> Îles du Frioul</p></div>
-                        </div>
+                        </a>
                     </div>
                     <div id="column3">
-                        <div id="vignette_activite_4">
+                        <a id="vignette_activite_4" href="https://openclassrooms.com" target="_blank">
                             <img class="images_activites" src="images/activites/parc_national_des_calanques.jpg" alt="photo du parc national des Calanques" />
                             <div class="description_activite"><p> Parc National des Calanques</p></div>
-                        </div>
+                        </a>
                     </div>
                     <div id="column4">
-                        <div id="vignette_activite_5">
+                        <a id="vignette_activite_5" href="https://openclassrooms.com" target="_blank">
                             <img class="images_activites" src="images/activites/notre_dame_de_la_garde.jpg" alt="photo de Notre Dame de la Garde à Marseille" />
                             <div class="description_activite"><p> Notre-Dame-de-la-Garde </p></div>
-                        </div>
-                        <div id="vignette_activite_6">
+                        </a>
+                        <a id="vignette_activite_6" href="https://openclassrooms.com" target="_blank">
                             <img class="images_activites" src="images/activites/parc_longchamp.jpg" alt="photo du parc Longchamp à Marseille" />
                             <div class="description_activite"><p> Parc Longchamp </p></div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
