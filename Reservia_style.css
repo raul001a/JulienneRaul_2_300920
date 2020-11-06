@@ -8,6 +8,8 @@
 }
 body {
     font-family: Raleway, Arial;
+    margin-right:0px;
+    margin-left:0px;
 }
 
 
@@ -40,8 +42,10 @@ h3 {
 
 header {
     height: 100px;
+    width:920px;
     border: solid 1px black;
     display: flex;
+    justify-content:flex-end;
     margin-left: 30px;
     margin-right: 30px;
     font-size:0.9em;
@@ -51,7 +55,7 @@ header {
     border: solid 1px red;
     margin-top: auto;
     margin-bottom: auto;
-    flex: 5.7;
+    justify-self: flex-start;
 }
 
 #logo_reservia {
@@ -59,14 +63,18 @@ header {
     height: auto;
 }
 
+nav {
+    display:flex;
+    width:280px;
+}
+
 
 .ancre {
     border: solid 1px red;
     margin-top: auto;
     margin-bottom: auto;
-    width:138px;
-    height:100%;
-    flex:1.1;
+    width:50%;
+    height:100px;
     display:flex;
     align-items:center;
 }
@@ -98,9 +106,9 @@ header a:hover {
     border: solid 1px red;
     margin-top: auto;
     margin-bottom: auto;
-    width:138px;
+    width:140px;
     text-align:center;
-    flex:1.1;
+    
 }
 
 
@@ -122,29 +130,36 @@ header a:hover {
 /*mise en place recherche par lieu*/
 
 #bloc_button {
+    display:flex;
     margin-left: 30px;
     margin-right: 30px;
     font-size:1em;
     height:35px;
-  
 }
 
 #search_button {
     display: flex;
     height: 100%;
     border-radius: 20px;
+    border: 2px solid #F2F2F2;
+    border-right: none;
+    align-items: center;
+    
 }
 
 #button {
     background-color: #0065FC;
     color: white;
-    height: 100%;
+    height:39px;
+    width:100px;
     border: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: solid 2px #0065FC;
-    font-size: 1em;
+    font-size: 1em;  
 }
+ #button2 {
+     display:none;
+ }
 
 #where {
     font-weight: bold;
@@ -154,27 +169,30 @@ header a:hover {
     padding-left:5px;
     height: 100%;
     font-size: 1em; 
+    
 }
 
+/*
 #label {
     display: flex;
     height:100%;
+    width:100%;
     border: 2px solid #F2F2F2;
     border-right: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+*/
 
 #label_2 {
     background-color: #F2F2F2;
-    height: 35px;
+    height: 100%;
     width: 35px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     display: flex;
     justify-content:center;
     align-items: center;
-
 }
 
 
@@ -182,7 +200,6 @@ header a:hover {
 
 /*mise en place des filtres*/
 
-/*mise en place des icones*/
 
 #bloc_filtres {
     display: flex;
@@ -198,24 +215,29 @@ header a:hover {
     font-weight:bold;
 }
 
+#filtre_bigpart{
+    display:flex;
+}
+
 .filtres {
     display: flex;
     margin-left: 20px;
     border: 1.5px solid #F2F2F2;
-    border-left:none;
-    border-radius: 50px;
+    border-left: none;
+    border-radius: 35px;
     height: 100%;
 }
 
-    .filtres:hover {
+ .filtres:hover {
         background-color: #DEEBFF;
     }
 
 .texte_filtre {
     padding-left: 10px;
     padding-right: 15px;
-    display:flex;
-    align-items:center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .icon {
@@ -230,13 +252,7 @@ header a:hover {
     justify-content:center;
 }
 
-    .icon img {
-        height: 50%;
-        width: 50%;
-        
-    }
-
-
+/*fin mise en place des filtres*/
 
 /*ligne attention*/
 #attention {
@@ -245,7 +261,7 @@ header a:hover {
     border: solid 1px black;
     margin-left: 30px;
     margin-right: 30px;
-    font-size:0.9em;
+    
 }
 
 #icon_attention {
@@ -257,68 +273,85 @@ header a:hover {
     display:flex;
     justify-content:center;
     align-items:center;
+    font-size:0.7em;
 }
 
 #texte_attention {
     display: flex;
     align-items: center;
-    margin-left:5px;
+    margin-left: 5px;
+    font-size: 0.9em;
 }
 
 /*mise en place section 1*/
 
 #section1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px dotted red;
+    width: 920px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display:flex;
-    margin-left:30px;
-    margin-right:30px;
     justify-content:space-between;
     
 }
 
-#section1 p {
-    font-size:0.8em;
-}
-
+/*mise en place des textes et des lignes d'étoile*/
 .nom_hotel {
-   
-    font-weight:bold;
+    font-weight: bold;
+    font-size: 0.8em;
+    border: 1px solid black;
+    margin: 0;
+    max-height: 70px;
+    overflow:auto;
+}
+.nuit {
+    font-size: 0.8em;
+    border: 1px solid black;
+    margin:5px 0 0 0;
     
+   
 }
 .stars {
-    display:flex;
-    margin-top:5px;
-    margin-bottom:15px;
+    display: flex;
+    border: 1px solid black;
 }
-
 .blue-star {
     font-size: 0.6em;
     color: #0065FC;
 }
-
 .grey-star {
     font-size: 0.6em;
     color: #F2F2F2;
 }
+
+/*mise en place bloc hébergements*/
 
 #hebergements {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
     border: dotted 1px black;
-    width: 580px;
+    width: 570px;
+    height:100%;
 }
 
 #titre_hebergements {
+    display: flex;
+    align-items: center;
     border: 1px solid purple;
+    height: 35px;
+    padding-left:15px;
 }
 
 #bloc_hebergements {
     display: flex;
     flex-wrap: wrap;
-   width:100%;
     justify-content: space-between;
     border: dotted 1px red;
-    padding:0px;
+    width:570px;
+    
 }
 
 
@@ -328,50 +361,53 @@ header a:hover {
     text-decoration:none;
     color:black;
     box-shadow: 1px 1px 12px #C0C0C0;
-    width: 170px;
-    height:140px;
+    width: 160px;
+    height:125px;
     border-radius: 15px;
     padding: 5px; 
-    margin-bottom:15px;
+    margin:10px;
 }
 
 .images_hebergements {
-    object-fit: cover;
+    
     width: 100%;
-    height: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 70px;
+    
 }
 
-
+    .images_hebergements img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 
 .description_hebergements {
-    width:100%;
-    height:40%;
-    margin-left:5px;
-    margin-right:5px;
+    height: 45px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
 }
 
-
-
-.description_hebergements p {
-    margin-top:auto;
-    margin-bottom:auto;
-}
 
 #plus {
 border : 1px solid purple;
+height:45px;
+padding-left:15px;
 }
 
 #plus p {
 font-size: 1em;
 font-weight: bold;
 }
-
-
+/*mise en place bloc populaire*/
 #populaires {
     background-color: #F2F2F2;
-    width: 250px;
+    height:100%;
+    width: 255px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -383,13 +419,14 @@ font-weight: bold;
     align-items:center;
     justify-content: space-between;
     border: dotted 1px black;
+    height:35px;
+    padding-left:15px;
 }
 
 #bloc_populaire {
     display: flex;
     flex-direction: column;
     align-items:center;
-    height:100%;
     justify-content:space-between;   
     padding:0px;
     border:dotted 1px black;
@@ -403,31 +440,41 @@ font-weight: bold;
     box-shadow: 1px 1px 5px #C0C0C0;
     border-radius: 15px;
     padding: 5px;
-    height: 100px;
+    height: 90px;
+    width:225px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .images_populaires {
-    width: 35%;
+    width:90px;
     height: 100%;
-    object-fit: cover;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    
 }
+ .images_populaires img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
 
 .description_populaires {
-    height:100%;
-    width:65%;
-    margin:10px;
+    width:115px;
+    padding:10px;
+    border:1px solid red;
     display:flex;
+    justify-content:space-between ;
     flex-direction:column;
-    justify-content:space-between;
+    
 }
 
-.description_populaires p {
-    margin-top:auto;
-    margin-bottom:auto;
-}
 
+
+
+/*fin mise en place bloc populaire*/
 
 /*mise en place section activité*/
 #activites {
@@ -440,17 +487,15 @@ font-weight: bold;
     
 }
 
-    #activites p {
-        font-weight: bold;
-        font-size: 0.8em;
-    }
 
 #bloc_activite {
     display: flex;
-    width:100%;
-    justify-content:space-between;
+    width: 100%;
+    justify-content: space-between;
     border: 1px dotted violet;
-    height:300px;
+    height: 300px;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 #column1, #column2, #column3, #column4 {
@@ -493,11 +538,13 @@ font-weight: bold;
 }
 
 .description_activite {
-    height:40px;
-    border : 1px solid green;
-    padding-left:10px;
+    height: 40px;
+    border: 1px solid green;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
 }
-/*taille des images à revoir*/
+
 
 .images_activites {
     width: 100%;
@@ -549,25 +596,242 @@ li {
 }
 
 @media all and (max-width: 376px) {
-    
+    #bloc_page {
+        max-width: 375px;
+        margin:0px;
+        padding:0;
+    }
 
     header {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        background-color: yellow;
+        width: auto;
+        height:auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
+    #bloc_logo {
+        order:1;
+    }
+
+    #sinscrire {
+        order:2;
+    }
+
+    nav {
+        order:3;
+        height:45px;
+        width:375px;
+    }
+
+    .ancre {
+        height:100%;
+    }
+        .ancre:hover {
+            border-top:none;
+            border-bottom: 2px solid #0065FC;
+        }
+
+    #bloc_titre {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+
+    #search_button {
+        border-radius: 12px;
+    }
+    
+    #label_2{
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+    }
+
+    #button1 {
+        display: none;
+    }
+
+    #button2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    #button {
+        border-radius: 10px;
+        width:35px;
+    }
+
+
+    /* fin mise en place bouton recherche*/
+
+
+    /*mise en place des filtres*/
+
+
+    #bloc_filtres {
+        display: flex;
+        flex-direction: column; /*modifié dans media query*/
+        margin-top: 10px; /*modifié dans media query*/
+        margin-left: 10px; /*modifié dans media query*/
+        margin-right: 10px; /*modifié dans media query*/
+        margin-bottom: 10px; /*modifié dans media query*/
+        height: auto; /*modifié dans media query*/
+    }
+
+    #filtre_bigpart {
+        display: flex;
+        flex-wrap: wrap; /*modifié dans media query*/
+    }
+
+    .filtres {
+        display: flex;
+        height: 35px; /*modifié dans media query*/
+        margin-left: 0; /*modifié dans media query*/
+        margin-right: 10px; /*modifié dans media query*/
+        margin-bottom: 10px; /*modifié dans media query*/
+    }
+
+
+
+    /*fin mise en place des filtres*/
+
+    /*ligne attention*/
+    #attention {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #texte_attention {
+        margin-left: 10px;
+    }
+
+    /*section 1*/
     #section1 {
         width: 100%;
         display: flex;
-        flex-direction: column-reverse;
+        margin-left: 0; /*modifié dans media query*/
+        margin-right: 0; /*modifié dans media query*/
+        flex-direction: column-reverse; /*modifié dans media query*/
     }
+
+    .nom_hotel {
+        font-size: 1em; /*modifié dans media query*/
+    }
+
+    .nuit {
+        font-size: 0.9em; /*modifié dans media query*/
+    }
+
+    .blue-star, .grey-star {
+        font-size: 0.8em; /*modifié dans media query*/
+    }
+
+   
+
+    /*bloc populaire*/
 
     #populaires {
-        width: 100%;
+        background-color: #F2F2F2;
+        width: auto; /*modifié dans media query*/
+        border-radius: 0; /*modifié dans media query*/
     }
 
+    #titre_populaire {
+        width:auto;
+       
+    }
+    #bloc_populaire {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .vignette_populaire {
+        height: 140px; /*modifié dans media query*/
+        width: 325px; /*modifié dans media query*/
+        margin-right:0;
+        margin-left:0;
+    }
+
+    .images_populaires {
+        width: 125px;
+    }
+
+
+    .description_populaires {
+        width: 180px;
+    }
+
+
+    /*mise en place bloc hébergements*/
+    #hebergements {
+        background-color: white; /*modifié dans media query*/
+        width: auto; /*modifié dans media query*/
+    }
+
+    #bloc_hebergements {
+        width:100%;
+        flex-direction: column; /*modifié dans media query*/
+        align-items:center;
+    }
+
+    .vignette_hebergement {
+        width: 325px; /*modifié dans media query*/
+        height: 190px; /*modifié dans media query*/
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .images_hebergements {
+        height: 115px;
+    }
+
+
+
+    .description_hebergements {
+        height: 65px;
+    }
+
+
+    /*mise en place section activité*/
+    #activites {
+        margin-left: 15px; /*modifié dans media query*/
+        margin-right: 15px; /*modifié dans media query*/
+        width: auto; /*modifié dans media query*/
+    }
+
+    #bloc_activite {
+        flex-direction: column; /*modifié dans media query*/
+        width: auto; /*modifié dans media query*/
+        height: auto; /*modifié dans media query*/
+        font-size: 1em; /*modifié dans media query*/
+        align-items: center;
+    }
+
+    #vignette_activite_1, #vignette_activite_2, #vignette_activite_3, #vignette_activite_4, #vignette_activite_5, #vignette_activite_6 {
+        width: 335px; /*modifié dans media query*/
+        height: 200px; /*modifié dans media query*/
+        margin-bottom: 20px; /*modifié dans media query*/
+    }
+
+    .description_activite {
+        height: 55px; /*modifié dans media query*/
+        border: 1px solid green;
+        padding-left: 10px;
+    }
+
+
+    .images_activites {
+        width: 100%;
+        height: calc(100% - 55px); /*modifié dans media query*/
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 1px 1px 5px #C0C0C0;
+    }
+    
     footer {
         display: flex;
         flex-direction: column;
@@ -586,5 +850,13 @@ li {
     #assistance {
         margin-left: 30px;
         margin-right: 30px;
+    }
+}
+
+
+@media all and (min-width: 376px) and (max-width:768px) {
+
+    header {
+        background-color:green;
     }
 }
