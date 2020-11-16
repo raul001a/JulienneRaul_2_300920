@@ -16,15 +16,16 @@ h1 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 h2 {
     font-size: 1em;
     font-weight: bold;
 }
 
-h3 {
-    font-size: 1em;
-    font-weight: normal;
-}
 
 .prix {
     font-weight:bold;
@@ -586,6 +587,12 @@ li:hover {
         margin-right: 20px;
     }
 
+    h1 {
+        font-size: 1.4em;
+    }
+
+    
+
     #bloc_button {
         height: 50px;
         box-sizing:border-box;
@@ -671,13 +678,8 @@ li:hover {
 
     /*section 1*/
 
-    h1 {
-        font-size:1.4em;
-    }
-
-
- #titre_populaire span {
-font-size:1.4em;
+    h3, #titre_populaire span {
+        font-size: 1.4em;
     }
 
     #section1 {
