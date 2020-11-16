@@ -56,13 +56,13 @@ header {
     align-items: center;
 }
 
-#logo_reservia {
+#logo-reservia {
     width: 94px;
 }
 
 nav {
-    display:flex;
-    width:280px;
+    display: flex;
+    width: 280px;
 }
 
 .ancre {
@@ -70,7 +70,7 @@ nav {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 header a {
@@ -135,7 +135,7 @@ header a:hover {
     font-weight: bold;
     color: black;
     border: 0;
-    padding-left: 5px;
+    padding-left: 15px;
     height: 100%;
     font-size: 1em;
 }
@@ -551,18 +551,18 @@ li:hover {
         display: flex;
         flex-wrap: wrap;
         width: auto;
-        height:auto;
+        height:130px;
         margin-left: 0;
         margin-right: 0;
     }
 
     #bloc_logo {
-        margin-left:15px;
+        margin-left:20px;
         order:1;
     }
 
     #sinscrire {
-        margin-right:15px;
+        margin-right:20px;
         text-align:right;
         order:2;
     }
@@ -582,23 +582,27 @@ li:hover {
     }
 
     #bloc_titre {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    
+
     #bloc_button {
-        width:100%;
-        height:50px;
-        justify-content:center;
-        margin-top:30px;
-        margin-bottom:30px;
+        height: 50px;
+        box-sizing:border-box;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #search_button {
+        width:100%;
         border-radius: 20px;
     }
+
     #where {
-        width:225px;
+        flex-grow:1;
     }
 
     #label_2 {
@@ -631,8 +635,8 @@ li:hover {
         display: flex;
         flex-direction: column; 
         margin-top: 10px; 
-        margin-left: 10px; 
-        margin-right: 10px; 
+        margin-left: 20px; 
+        margin-right: 20px; 
         margin-bottom: 10px; 
         height: auto; 
     }
@@ -644,18 +648,21 @@ li:hover {
 
     .filtres {
         display: flex;
-        height: 35px; 
+        height: 50px; 
         margin-left: 0; 
         margin-right: 10px; 
         margin-bottom: 10px; 
+    }
+    .icon{
+        width:50px;
     }
 
     /*fin mise en place des filtres*/
 
     /*ligne attention*/
     #attention {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #texte_attention {
@@ -663,12 +670,22 @@ li:hover {
     }
 
     /*section 1*/
+
+    h1 {
+        font-size:1.4em;
+    }
+
+
+ #titre_populaire span {
+font-size:1.4em;
+    }
+
     #section1 {
         width: 100%;
         display: flex;
-        margin-left: 0; 
-        margin-right: 0; 
-        flex-direction: column-reverse; 
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column-reverse;
     }
 
     .nom_hotel {
@@ -689,12 +706,17 @@ li:hover {
     #populaires {
         background-color: #F2F2F2;
         width: 100%; 
-        border-radius: 0; 
+        border-radius: 0;
+        padding:0;
+        padding-bottom:30px;
+        
     }
 
     #titre_populaire {
-        width:auto;
-       
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top:30px;
+        padding-bottom:15px;
     }
     #bloc_populaire {
         width: 100%;
@@ -715,6 +737,14 @@ li:hover {
         background-color: white;
         width: 100%;
         margin-right: 0;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    #titre_hebergements {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 15px;
     }
 
     #bloc_hebergements {
@@ -736,13 +766,18 @@ li:hover {
         margin-bottom: 10px;
     }
 
+    #plus {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 
 
     /*mise en place section activité*/
     #activites {
-        margin-left: 15px;
-        margin-right: 15px; 
-        width: auto; 
+        margin-left: 20px;
+        margin-right: 20px;
+        
     }
 
     #bloc_activite {
@@ -750,6 +785,7 @@ li:hover {
         width: auto; 
         height: auto; 
         font-size: 1em; 
+        margin-top:15px;
         align-items: center;
     }
 
